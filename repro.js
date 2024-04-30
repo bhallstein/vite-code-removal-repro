@@ -5,5 +5,6 @@ function getSite() {
 }
 
 const site = getSite()
-const result = post_routing('chickens', site, [])
+const args = ['chickens', site, []]
+const result = post_routing(...args)
 console.log('//result/', result)
